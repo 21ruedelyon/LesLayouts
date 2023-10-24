@@ -1,16 +1,11 @@
-package com.example.leslayouts.a02_animation;
+package com.example.leslayouts.a02animation;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
 
-import com.example.leslayouts.HomeActivity;
 import com.example.leslayouts.R;
-import com.example.leslayouts.a01layout.F01FrameActivity;
 
 public class a01ActivityLoading extends AppCompatActivity {
 

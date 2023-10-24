@@ -50,6 +50,13 @@
             android:text="Relative \nLayout"
             android:textAllCaps="true" />
 
+        <Button
+            android:id="@+id/btn_lv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Button" />
+
     </LinearLayout>
 
     <TextView

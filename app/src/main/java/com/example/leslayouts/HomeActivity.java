@@ -10,8 +10,9 @@ import android.widget.Button;
 import com.example.leslayouts.a01layout.F01FrameActivity;
 import com.example.leslayouts.a01layout.L01LinearActivity;
 import com.example.leslayouts.a01layout.R01RelativeActivity;
-import com.example.leslayouts.a02_animation.a01ActivityLoading;
-import com.example.leslayouts.a02_animation.a02ActivitySimpson;
+import com.example.leslayouts.a02animation.a01ActivityLoading;
+import com.example.leslayouts.a02animation.a02ActivitySimpson;
+import com.example.leslayouts.a03list.ActivityListView;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -21,14 +22,24 @@ public class HomeActivity extends AppCompatActivity {
 
     Button btnLoading;
     Button btnSimpson;
+    Button btnLv;
     private void initUI() {
         btnLinearLayout = findViewById(R.id.btn_linear_layout);
         btnFrameLayout = findViewById(R.id.btn_frame_layout);
         btnRelativeLayout = findViewById(R.id.btn_relative_layout);
         btnLoading = findViewById(R.id.btn_loading);
         btnSimpson = findViewById(R.id.btn_simpson);
+        btnLv = findViewById(R.id.btn_lv);
     }
-
+    private void setBtnLvLayout() {
+        btnLv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent1 = new Intent(HomeActivity.this, ActivityListView.class);
+                startActivity(intent1);
+            }
+        });
+    }
     //Gestion boutons
     private void setBtnLinearLayout() {
         btnLinearLayout.setOnClickListener(new View.OnClickListener() {
@@ -86,5 +97,6 @@ public class HomeActivity extends AppCompatActivity {
         setBtnRelativeLayout();
         setBtnLoading();
         setBtnSimpson();
+        setBtnLvLayout();
     }
 }
